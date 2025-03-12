@@ -1,6 +1,6 @@
 from typing import Any, Optional, Union
 
-from autogen.agentchat.conversable_agent import ConversableAgent
+from .conversable_agent import ConversableAgent
 from EvoAgent.DeepResearchTools import DeepResearchTool
 import os
 

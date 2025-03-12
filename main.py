@@ -21,7 +21,7 @@ agent = DeepResearchAgent(
     llm_config=llm_config,
 )
 
-message = "What is DeepResearch？"
+message = "What blogs has Jina Al published recently, and what are some of her inspirations?"
 
 result = agent.run(
     message=message,

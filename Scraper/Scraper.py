@@ -4,7 +4,7 @@ import json
 import os
 headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
 
-repoURL = "TUDB-Labs/MixLoRA"
+repoURL = "astral-sh/uv"
 
 # the URL of the target repo to scrape
 url = f"https://github.com/{repoURL}"
@@ -83,8 +83,6 @@ if bordergrid_html_element:
 # build the URL for README.md and download it
 readme_url = f'https://raw.githubusercontent.com/{repoURL}/refs/heads/main/README.md'
 readme_page = requests.get(readme_url, headers=headers)
-print(readme_url)
-print(readme_page)
 readme = None
 # if there is a README.md file
 if readme_page.status_code != 404:

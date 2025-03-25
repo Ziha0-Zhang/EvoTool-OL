@@ -4,12 +4,9 @@ load_dotenv()
 
 import os
 
-#import nest_asyncio
-#from pydantic import BaseModel
-
 from autogen import AssistantAgent, UserProxyAgent
 from autogen.tools.experimental import Crawl4AITool, BrowserUseTool
-#nest_asyncio.apply()
+
 
 
 llm_config = {

@@ -21,7 +21,7 @@ agent = DeepResearchAgent(
     llm_config=llm_config,
 )
 
-message = "四川大学杨雨豪在ACM-ICPC程序设计竞赛的成就"
+message = "IDs-Lab实验室最新发表的论文信息"
 
 result = agent.run(
     message=message,
